@@ -52,6 +52,8 @@
 
 - (id)initWithItems:(NSArray *)items;
 
+
+//demonstration of call
 - (void)resetBackgroundColors;
 
 @end
