@@ -91,6 +91,7 @@
     buttonSetBarColor.frame = CGRectMake(0,0,230,28);
     buttonSetBarColor.center = CGPointMake(CGRectGetMidX(self.view.bounds), 300);
     [buttonSetBarColor setTitle:@"Set Bar Color Black" forState:UIControlStateNormal];
+    [buttonSetBarColor setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [buttonSetBarColor addTarget:self action:@selector(setBarColorToBlack) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:buttonSetBarColor];
     
@@ -107,7 +108,9 @@
     buttonResetColor.frame = CGRectMake(0,0,230,28);
     buttonResetColor.center = CGPointMake(CGRectGetMidX(self.view.bounds), 380);
     [buttonResetColor setTitle:@"Reset Colors" forState:UIControlStateNormal];
+    [buttonResetColor setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [buttonResetColor addTarget:self action:@selector(resetColors) forControlEvents:UIControlEventTouchUpInside];
+    
     [self.view addSubview:buttonResetColor];
     
     [smkCustomMenu addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventTouchUpInside]; 
